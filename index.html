@@ -3,54 +3,116 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>My Free Website</title>
+  <title>Explore The World | Travel Planner</title>
   <style>
-    body {
+    * {
       margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
       font-family: 'Segoe UI', sans-serif;
-      background: linear-gradient(to right, #4facfe, #00f2fe);
-      color: #fff;
-      text-align: center;
+      background: #f4f4f4;
+      color: #333;
     }
     header {
-      padding: 60px 20px;
+      background: linear-gradient(to right, #00b4db, #0083b0);
+      color: white;
+      padding: 20px 10px;
+      text-align: center;
     }
-    h1 {
-      font-size: 2.5rem;
+    header h1 {
       margin-bottom: 10px;
+      font-size: 2rem;
     }
-    p {
-      font-size: 1.2rem;
-      margin-bottom: 30px;
-    }
-    a.button {
-      background: #fff;
-      color: #007BFF;
-      padding: 12px 25px;
-      border-radius: 25px;
+    header a.button {
+      background: white;
+      color: #0083b0;
+      padding: 10px 20px;
       text-decoration: none;
+      border-radius: 25px;
       font-weight: bold;
-      transition: background 0.3s ease;
     }
-    a.button:hover {
+    header a.button:hover {
       background: #f0f0f0;
     }
+
+    .section {
+      position: relative;
+      min-height: 80vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-align: center;
+      padding: 40px;
+      background-size: cover;
+      background-position: center;
+    }
+    .overlay {
+      background: rgba(0,0,0,0.5);
+      padding: 30px;
+      border-radius: 12px;
+    }
+    .overlay h2 {
+      font-size: 2rem;
+      margin-bottom: 15px;
+    }
+    .overlay p {
+      font-size: 1.1rem;
+      line-height: 1.6;
+    }
+
     footer {
-      margin-top: 50px;
+      background: #111;
+      color: #ccc;
+      text-align: center;
       padding: 20px;
       font-size: 0.9rem;
-      opacity: 0.8;
     }
   </style>
 </head>
 <body>
   <header>
-    <h1>Welcome to My Website!</h1>
-    <p>This is a free single-page website hosted on GitHub Pages 🚀</p>
-    <a href="https://your-affiliate-link.com" target="_blank" class="button">Check My Offer</a>
+    <h1>🌎 Explore The World with Us</h1>
+    <p>Plan your dream trip — book flights, hotels, and packages easily!</p>
+    <a href="https://www.expedia.com" target="_blank" class="button">Book Now on Expedia</a>
   </header>
+
+  <!-- USA Section -->
+  <section class="section" style="background-image: url('https://images.unsplash.com/photo-1549924231-f129b911e442?auto=format&fit=crop&w=1400&q=80');">
+    <div class="overlay">
+      <h2>Discover the USA 🇺🇸</h2>
+      <p>From the bright lights of New York City to the breathtaking Grand Canyon, the USA offers a diverse range of experiences. Explore iconic cities, national parks, and cultural landmarks. Perfect for road trips and adventures!</p>
+    </div>
+  </section>
+
+  <!-- UK Section -->
+  <section class="section" style="background-image: url('https://images.unsplash.com/photo-1528909514045-2fa4ac7a08ba?auto=format&fit=crop&w=1400&q=80');">
+    <div class="overlay">
+      <h2>Explore the United Kingdom 🇬🇧</h2>
+      <p>Experience royal history in London, charming countryside in Scotland, and cultural wonders across England. Visit Buckingham Palace, Stonehenge, and the Tower Bridge — the UK is rich in tradition and beauty.</p>
+    </div>
+  </section>
+
+  <!-- Singapore Section -->
+  <section class="section" style="background-image: url('https://images.unsplash.com/photo-1587202372775-98926bb6b6b3?auto=format&fit=crop&w=1400&q=80');">
+    <div class="overlay">
+      <h2>Visit Singapore 🇸🇬</h2>
+      <p>Marvel at futuristic architecture, enjoy world-class shopping, and savor delicious cuisine. From Marina Bay Sands to Gardens by the Bay, Singapore is a clean, safe, and exciting destination.</p>
+    </div>
+  </section>
+
+  <!-- Australia Section -->
+  <section class="section" style="background-image: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1400&q=80');">
+    <div class="overlay">
+      <h2>Adventure in Australia 🇦🇺</h2>
+      <p>Home to the Great Barrier Reef, Sydney Opera House, and vast outback landscapes — Australia offers both adventure and relaxation. Perfect for nature lovers and thrill-seekers alike!</p>
+    </div>
+  </section>
+
   <footer>
-    © 2025 My Website | Built with ❤️ using GitHub Pages
+    © 2025 Explore The World | Affiliate Partner: Expedia | Built with ❤️ on GitHub Pages
   </footer>
 </body>
 </html>
